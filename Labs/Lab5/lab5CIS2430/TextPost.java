@@ -1,6 +1,4 @@
-package Labs.Lab5.lab5CIS2430;
-
-import org.w3c.dom.Text;
+package CIS2430.Labs.Lab5.lab5CIS2430;
 
 public class TextPost {
     private String titleOfPost;
@@ -10,13 +8,13 @@ public class TextPost {
     private RegisterUser user;
 
     // constructor
-    public TextPost(String titleOfPost, String contentOfPost, RegisterUser user) throws Exception {
+    public TextPost(String titleOfPost, String contentofPost, RegisterUser user) throws Exception {
         // validating title
         if (titleOfPost == null || titleOfPost.trim().isEmpty()) {
             throw new Exception("title of the post cant be empty");
         }
         // validating content of post
-        if (contentOfPost == null || contentOfPost.trim().isEmpty()) {
+        if (contentofPost == null || contentofPost.trim().isEmpty()) {
             throw new Exception("content cant be empty....");
         }
         // Validate user
@@ -25,7 +23,7 @@ public class TextPost {
         }
 
         this.titleOfPost = titleOfPost.trim();
-        this.contentOfPost = contentOfPost.trim();
+        this.contentofPost = contentofPost.trim();
         this.user = user;
 
         // generating the post ids
@@ -40,7 +38,7 @@ public class TextPost {
     }
 
     public String getContent() {
-        return contentOfPost;
+        return contentofPost;
     }
 
     public RegisterUser getUser() {
@@ -59,14 +57,14 @@ public class TextPost {
         if (contentOfPost == null || contentOfPost.trim().isEmpty()) {
             throw new Exception("Post content cannot be empty");
         }
-        this.contentOfPost = contentOfPost.trim();
+        this.contentofPost = contentOfPost.trim();
     }
 
     @Override
     public String toString() {
         return ("Created By:" + user.getFullName() + "(@<" + user.getResgiterUserName() + ">)" + "\ntitleOfPost: "
                 + titleOfPost
-                + "\n" + contentOfPost);
+                + "\n" + contentofPost);
     }
 
     @Override
@@ -84,7 +82,7 @@ public class TextPost {
         // 3. cast object to post and compare fields
         TextPost otherPost = (TextPost) obj;
         return this.postId == otherPost.postId && this.titleOfPost.equals(otherPost.titleOfPost) &&
-                this.contentOfPost.equals(otherPost.contentOfPost) &&
+                this.contentofPost.equals(otherPost.contentofPost) &&
                 this.user.equals(otherPost.user);
     }
 

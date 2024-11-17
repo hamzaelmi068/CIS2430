@@ -1,4 +1,4 @@
-package Labs.Lab5.lab5CIS2430;
+package CIS2430.Labs.Lab5.lab5CIS2430;
 
 public class RegisterUser {
     private String userName;
