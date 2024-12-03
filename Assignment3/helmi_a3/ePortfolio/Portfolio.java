@@ -9,7 +9,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * This class represents a Portfolio that will manage stocks and mutualfunds
+ * The class below represents a Portfolio that will manage stocks and
+ * mutualfunds
  */
 public class Portfolio {
     // array list for investments below
