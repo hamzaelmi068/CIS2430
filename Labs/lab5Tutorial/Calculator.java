@@ -1,9 +1,9 @@
 package CIS2430.Labs.lab5Tutorial;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JButton;
-import javax.swing.*;
+// import javax.swing.JFrame; dont need this, swing.* has this
+// import javax.swing.JPanel; dont need this, swing.* has this
+// import javax.swing.JButton; dont need this, swing.* has this
+import javax.swing.*; // this includes JFrame, JPanel, JButton, JTextArea
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
